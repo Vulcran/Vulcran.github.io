@@ -1,84 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Vote</title>
-    <link rel="stylesheet" href="css.css">
-</head>
-<body>
-<div class="wrapper">
-    <h2><span style="font-size: 24pt"><strong><img style="display: block; border-radius: 40px; margin-left: auto; margin-right: auto;" role="presentation" src="images/Screenshot 2024-11-04 at 11.15.42 AM.png" alt="" width="450" height="183"/><br /></strong></span></h2>
-    <h1><br />Am I Eligible?</h1>
-    <div style="padding: 20px; border-radius: 10px; background-color: lightgrey; max-width: 80vw; box-shadow: -5px 5px 5px grey;">
+@font-face {
+font-family: "normal";
+src: url("fonts/normal.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
 
-        <ul>
-            <li><strong>You must have ALREADY registered with the NC Board of Elections to vote on Election Day (Tuesday Nov 5th).</strong>
-                <ul>
-                    <li><span style="text-decoration: underline;"><em>To check your registration status</em></span> visit the NC Board of Elections Registration Lookup: <a href="https://vt.ncsbe.gov/RegLkup/">https://vt.ncsbe.gov/RegLkup/</a><br />
-                        <ul>
-                            <li><em><strong>Keep this tab open we will reference it multiple times</strong></em></li>
-                        </ul>
-                    </li>
-                    <li>Same day registration is only allowed for early voting.</li>
-                </ul>
-            </li>
-            <li><strong>If registered you must vote at your designated polling location(s)</strong><br />
-                <ul>
-                    <li>Your polling location will be listed with other information when you check your registration status</li>
-                </ul>
-            </li>
-        </ul>
-        <p><img style="max-width:95%; object-fit: contain;" src="images/Screenshot 2024-11-04 at 10.23.45 AM.png" alt="Screenshot 2024-11-04 at 10.23.45 AM.png"/></p>
+@font-face {
+font-family: "bold";
+src: url("fonts/bold.ttf") format("truetype");
+font-weight: bold;
+font-style: normal;
+}
 
-    </div>
-    <h1><br />Know Before U Go:</h1>
-    <div style="padding: 20px; border-radius: 10px; background-color: lightgrey; max-width: 80vw; box-shadow: -5px 5px 5px grey;">
-        <ul>
-            <li>Regardless of who you vote for it's important to know about which positions will be on your ballot and which candidate(s) most closely align with your political beliefs.
-                <ul>
-                    <li><em><span style="text-decoration: underline;"><strong>A custom sample/practice ballot will be available when you check your registration status</strong></span></em>
-                        <ul>
-                            <li style="list-style-type: none;"><img style="display: block; margin-left: auto; margin-right: auto; padding: 10px 0; width: 50vw; height: 100%" src="images/Screenshot 2024-11-04 at 10.38.42 AM.png" alt="Screenshot 2024-11-04 at 10.38.42 AM.png"/></li>
-                        </ul>
-                    </li>
-                    <li><strong><span style="text-decoration: underline;">Use an online voter guide to collect information on candidates in a single place.</span></strong>
-                        <ul>
-                            <li>For a smoother and fast voting process <em><strong>consider filling out your sample ballot ahead of time</strong></em> so when you are in the voting booth all you have to do is copy over your choices</li>
-                            <li>The States Voter Guide: <a href="https://ncvoter.branch.vote/ballot">https://ncvoter.branch.vote/ballot</a></li>
-                            <li style="list-style-type: none;"><img style="display: block; margin-left: auto; margin-right: auto; padding: 10px 0; width: 50vw; height: 100%" src="images/Screenshot 2024-11-04 at 10.42.15 AM.png" alt="Screenshot 2024-11-04 at 10.42.15 AM.png"/></li>
-                            <li style="display: flex;justify-content: center; gap: 10px; padding-bottom: 10px; list-style-type: none;"><img style="width: 50vw; height: 100%" src="images/Screenshot 2024-11-04 at 10.45.06 AM.png" alt="Screenshot 2024-11-04 at 10.45.06 AM.png"/></li>
-                            <li style="display: flex;justify-content: center; gap: 10px; padding-bottom: 10px; list-style-type: none;"><img style="width: 50vw; height: 100%" src="images/Screenshot 2024-11-04 at 10.45.16 AM.png" alt="Screenshot 2024-11-04 at 10.45.16 AM.png" width="450" height="306" /></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>Understand the Referenda on the ballot
-                <ul>
-                    <li><em><span style="text-decoration: underline;"><strong>Referenda can be some of the most challenging and confusing parts of voting</strong></span></em> so make sure you thoroughly understand what a vote for or against these mean prior to entering the voting booth.
-                        <ul>
-                            <li>Information about these can also be found in The States Voter Guide: <a href="https://ncvoter.branch.vote/ballot">https://ncvoter.branch.vote/ballot</a></li>
-                        </ul>
-                    </li>
-                    <li style="list-style-type: none;"><img style="display: block; margin-left: auto; margin-right: auto; padding: 10px 0; width: 50vw; height: 100%" src="images/Screenshot 2024-11-04 at 10.55.38 AM.png" alt="Screenshot 2024-11-04 at 10.55.38 AM.png"/></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <p>&nbsp;</p>
-    <h1 style="color: white">Time to Vote!</h1>
-    <div style="padding: 20px; border-radius: 10px; background-color: lightgrey; max-width: 80vw; box-shadow: -5px 5px 5px grey;">
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+background-image: url('images/photo-1523821741446-edb2b68bb7a0.jpeg');
+background-size: cover;
+font-family: sans-serif;
+color: #333;
+}
 
-        <ul>
-            <li><em>Make sure you are going to the correct polling place</em></li>
-            <li><span style="text-decoration: underline;"><strong>Bring your ID!</strong></span> You will need a physical ID to vote in the NC General election
-                <ul>
-                    <li>Physical (not digital) student IDs are accepted. For more information visit: <a href="https://www.ncsbe.gov/voting/voter-id#required">https://www.ncsbe.gov/voting/voter-id#required</a></li>
-                </ul>
-            </li>
-            <li><em><span style="text-decoration: underline;">Catch a ride on Lyft or Uber for 50% off to/from the polling place on Nov 5th</span></em></li>
-        </ul>
-    </div>
-    <p>&nbsp;</p>
-</div>
-</body>
-</html>
+.wrapper {
+max-width: 800px;
+width: 100%;
+background: rgba(255, 255, 255, 0.9);
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+padding: 20px;
+}
+
+h1 {
+font-family: "bold", sans-serif;
+font-size: 2em;
+text-align: center;
+margin-top: 0;
+color: #2a6fa8;
+}
+
+.info-section {
+padding: 20px;
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 8px;
+margin: 20px 0;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+list-style-type: disc;
+margin-left: 20px;
+line-height: 1.6;
+}
+
+li strong {
+color: #333;
+}
+
+a {
+color: #2a6fa8;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.info-image {
+display: block;
+max-width: 100%;
+margin: 20px auto;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
