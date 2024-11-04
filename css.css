@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "normal"; /* Name of your custom font */
+    src: url("fonts/normal.ttf") format("truetype"); /* Path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "bold"; /* Name of your custom font */
+    src: url("fonts/bold.ttf") format("truetype"); /* Path to your .ttf file */
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "italic"; /* Name of your custom font */
+    src: url("fonts/italic.ttf") format("truetype"); /* Path to your .ttf file */
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "boldItalic"; /* Name of your custom font */
+    src: url("fonts/boldItalic.ttf") format("truetype"); /* Path to your .ttf file */
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+body{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/serene-blue-green-blurred-gradient-background_886588-47032.jpg.avif'); /* Replace with your image link */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 1;
+    font-family: sans-serif; /* Apply the custom font */
+
+}
+
+.wrapper::after{
+    z-index: 2;
+    position: relative;
+    color: black;
+    font-family: sans-serif; /* Apply the custom font */
+    font-weight: normal;
+    font-style: normal;
+    opacity: 1; /* Ensure full opacity */
+}
